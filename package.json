@@ -1,0 +1,61 @@
+{
+  "name": "pug-boilerplate",
+  "version": "1.0.0",
+  "scripts": {
+    "backend:build": "node app.js",
+    "backend:development": "nodemon app.js",
+    "frontend:build": "webpack --progress --config webpack.config.build.js",
+    "frontend:development": "webpack serve --progress --config webpack.config.development.js",
+    "start": "concurrently --kill-others \"npm run backend:development\" \"npm run frontend:development\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aleksejdom/pug-boilerplate.git"
+  },
+  "author": "aleksej domovec",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "copy-webpack-plugin": "^8.1.1",
+    "css-loader": "^5.2.4",
+    "eslint": "^7.26.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-import": "^2.23.2",
+    "eslint-plugin-promise": "^4.3.1",
+    "eslint-webpack-plugin": "^2.5.4",
+    "file-loader": "^6.2.0",
+    "glslify-loader": "^2.0.0",
+    "gsap": "^3.6.1",
+    "image-minimizer-webpack-plugin": "^2.2.0",
+    "imagemin-gifsicle": "^7.0.0",
+    "imagemin-jpegtran": "^7.0.0",
+    "imagemin-optipng": "^8.0.0",
+    "include-media": "^1.4.10",
+    "install": "^0.13.0",
+    "mini-css-extract-plugin": "^1.6.0",
+    "npm": "^7.14.0",
+    "postcss-loader": "^5.3.0",
+    "raw-loader": "^4.0.2",
+    "sass": "^1.32.13",
+    "sass-loader": "^11.1.1",
+    "terser-webpack-plugin": "^5.1.2",
+    "url-search-params-polyfill": "^8.1.1",
+    "webpack": "^5.37.0",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.7.3"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^6.1.0",
+    "errorhandler": "^1.5.1",
+    "express": "^4.17.1",
+    "method-override": "^3.0.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.7",
+    "normalize.css": "^8.0.1",
+    "pug": "^3.0.2"
+  }
+}

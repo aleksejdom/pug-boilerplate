@@ -1,0 +1,6 @@
+.contact{
+    @extend %center;
+    @extend %cover;
+    color: $color-white;
+    background: $color-quicksand;
+}
